@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+
+  .top-banner {
+    position: fixed; /* Gör bannern fastklistrad högst upp */
+    top: 0; /* Placera den högst upp */
+    left: 0; /* Sträck ut från vänster */
+    width: 100%; /* Gör bannern lika bred som sidan */
+    background-color: #ffcc00; /* Gul bakgrundsfärg för att dra uppmärksamhet */
+    color: #000; /* Svart textfärg */
+    text-align: center; /* Centrera texten */
+    padding: 0.5em 0; /* Lite vertikal padding för bättre utseende */
+    font-weight: bold; /* Gör texten fet */
+    z-index: 1000; /* Se till att bannern ligger över allt annat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lägg till en liten skugga för att separera från resten av sidan */
+}
+  
+  .navbar-myspace {
+    background-color: #003399;
+    color: white;
+    padding: 4px 8px;
+    font-family: Tahoma, sans-serif;
+  }
+  
+  .navbar-myspace a {
+    color: white;
+    text-decoration: none;
+    margin: 0 6px;
+    font-weight: bold;
+  }
+  
+  .navbar-myspace a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-custom {
+    margin-top: 0;
+  }
+  
+  #_logo {
+    width: 250px;
+    height: 70px;
+  }
+  
+  #_onlinenowgif {
+    width: 150px;
+    height: 50px;
+  }
+  
+  #_pfp {
+    width: 40%;
+    border: 2px solid #6699cc;
+  }
+  
+  .profile-box {
+    width: 70%;
+    margin-left: auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 2px solid #6699cc;
+    border-bottom: 2px solid #6699cc;
+    border-right: 2px solid #6699cc;
+    box-shadow: 2px 2px 5px #cccccc;
+    font-family: Verdana, sans-serif;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 2px solid #6699cc;
+    border-bottom: 2px solid #6699cc;
+    border-left: 2px solid #6699cc;
+    flex: 0.5;
+  }
+  
+  .suggestions-section {
+    background-color: white;
+    margin-top: 1em;
+  }
+  
+  .suggestion-box {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    background-color: #e0eaff;
+  }
+  
+  .noDecoration {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Intressen */
+  
+  .interest-box-retro {
+    width: 400px;
+    border: 2px solid #6699cc;
+    background-color: #fff8e7;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .interest-title-retro {
+    background-color: #6699cc;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid #336699;
+  }
+  
+  .interest-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .interest-table td {
+    padding: 5px 10px;
+    vertical-align: top;
+  }
+  
+  .interest-table .title {
+    background-color: #9ec6f0;
+  }
+  
+  .interest-table .subject {
+    background-color: #bedaf7;
+  }
+  
+  /* Pop-up Window*/
+  
+  .popup {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    max-height: 500px;
+    background-color: #fffbe6;
+    border: 3px ridge #d4af37;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    border-radius: 0px;
+    cursor: default;
+    resize: both;
+    overflow-y: auto;
+  }
+  
+  .popup-header {
+    background-color: #f5d442;
+    padding: 6px;
+    cursor: move;
+    font-weight: bold;
+    color: #113893;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+  }
+  
+  .popup-content {
+    padding: 10px;
+    font-size: 12px;
+    color: #222;
+    background-color: #fffef5;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #113893;
+  }
+  
+  /* End */
+  
+
+  .project-btn {
+    background-color: #eee;
+    border: 2px solid #333;
+    padding: 1.2em 0.5em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #999;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Ikoner i knapparna */
+  .project-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Retro färger */
+  .bg-yellow { background-color: #ffcc00; }
+  .bg-blue   { background-color: #00cfd6; }
+  .bg-pink   { background-color: #ff99cc; }
+  .bg-green  { background-color: #99cc66; }
+  

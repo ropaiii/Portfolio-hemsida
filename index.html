@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style2.css">
+</head>
+
+<body>
+    <div class="top-banner">
+        Hemsidan är under arbete och ej färdig.
+        <button onclick="this.parentElement.style.display='none'" style="margin-left: 10px; background: none; border: none; color: #000; font-weight: bold; cursor: pointer;">✖</button>
+    </div>
+    <!-- Top Bar -->
+    <div class="navbar-myspace d-flex justify-content-between align-items-center">
+        <div>
+            <img src="/myspacelogo.png" alt="Website Logo" id="_logo">
+        </div>
+        <div>
+            <a href="#">Hjälp</a> | <a href="#">Logga ut</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand navbar-custom p-0">
+        <div class="container-fluid bg-primary">
+            <ul class="navbar-nav ml-auto d-flex flex-wrap w-100 justify-content-between">
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <!--Home-->
+                <li class="nav-item"><a class="nav-link text-white" href="/index.html">Hem</a></li>
+                <!--Browse-->
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Bläddra
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                        style="max-height: 200px; overflow-y: auto;">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tips!
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                        style="max-height: 200px; overflow-y: auto;">
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="openPopup('movietipsPopup')">Film- och serietips!</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="openPopup('boktipsPopup')">Boktips!</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="openPopup('receptPopup')">Snabba och goda recept!</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="javascript:void(0)" onclick="openPopup('blogPopup')">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mailto:didrikabystrom@gmail.com">Mail</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item"><a class="nav-link text-white"
+                        href="https://www.linkedin.com/in/didrika-bystr%C3%B6m-811a35232/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="https://github.com/ropaiii"
+                        target="_blank">Github</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="https://discord.com/users/Ropaiii"
+                        target="_blank">Discord</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">|</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-4">
+        <div class="row no-gutters">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h4><strong>Didrika Byström</strong></h4>
+                <div class="d-flex align-items-start">
+                    <img src="/cv-bild.jpg" id="_pfp" class="img-fluid mb-3" alt="Profile Picture" />
+                    <div>
+                        <p class="text-right mt-3 ms-3"><em>“På dagarna felsöker jag nätverk, på nätterna bygger jag objekt. Ingen vet riktigt vilket lager av OSI jag befinner mig i"</em></p>
+                        <p class="text-right ms-3">Kvinna 22år;<br />Sundsvall;<br />Sverige;</p>
+                        <img id="_onlinenowgif" src="/online.gif" alt="Online Now!" class="img-fluid">
+                    </div>
+                </div>
+                <p><strong>Mood:</strong> Upptagen 😬</p>
+                <p><strong>Biografi:</strong> Hej och välkommen till min sida 😄 Jag heter Didrika och jag är 22 år gammal. Här kan du utforska litegrann om mig och mina projekt. Glöm inte att kika på bloggen 🙈</p>
+                <p><strong>Se min: </strong><a href="javascript:void(0)" onclick="openPopup('blogPopup')"><strong>Blog</strong></a> | <a
+                        href="javascript:void(0)" onclick="openPopup('picturesPopup')"><strong>Pics</strong></a> | <a href="javascript:void(0)" onclick="openPopup('videosPopup')"><strong>Videos</strong></a></p>
+
+                <!--Contacting Didrika Box-->
+                <div class="section-box" style="background-color: #fdf7e2; border: 1px solid #cccccc;">
+                    <div style="background-color: #4a7aa3; color: white; padding: 0.5em; font-weight: bold;">
+                        Kontakta Didrika
+                    </div>
+                    <table style="width: 100%; padding: 1em; font-size: 0.9em;">
+                        <tr>
+                            <td><img src="/logo/send_logo.png" alt="Send Message" style="margin-right: 5px;"> <a href="/cdn-cgi/l/email-protection#7e1a171a0c17151f1c070d0a0c11133e19131f1712501d1113"><strong>Skicka meddelande</strong></a></td>
+                            <td><img src="/logo/forwardtofriend_logo.png" alt="Forward to Friend"
+                                    style="margin-right: 5px;"> <a href="#"><strong>Vidarebefodra till vän</strong></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/logo/addfriend_logo.png" alt="Add to Friends" style="margin-right: 5px;"> <a
+                                    href="https://www.linkedin.com/in/didrika-bystr%C3%B6m-811a35232/" target="_blank"><strong>Lägg till som vän</strong></a></td>
+                            <td><img src="/logo/addtofavorites_logo.png" alt="Add to Favorites"
+                                    style="margin-right: 5px;"> <a href="https://www.linkedin.com/in/didrika-bystr%C3%B6m-811a35232/" target="_blank"><strong>Lägg till som bästis</strong></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/logo/instantmessage_logo.png" alt="Instant Message"
+                                    style="margin-right: 5px;"> <a href="https://www.linkedin.com/messaging/thread/new/?composeOptionType=PREMIUM_INMAIL&isTYAHFlow=true&recipients=List(urn%3Ali%3Afsd_profile%3AACoAADoscU0BdQS0kI8WfaknxXx_8CfpOtfc4Wo)&targetURL=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fupsell%3Fchannel%3DINMAIL%26premiumUpsellSlotUrn%3Durn%253Ali%253Afsd_premiumUpsellSlot%253AMESSAGE_COMPOSE_TYPEAHEAD%26profileUrn%3Durn%253Ali%253Afsd_profile%253AACoAADoscU0BdQS0kI8WfaknxXx_8CfpOtfc4Wo&upsell=true" target="_blank"><strong>Direkt meddelande</strong></a></td>
+                            <td><img src="/logo/blockuser_logo.png" alt="Block User" style="margin-right: 5px;"> <a
+                                    href="#"><strong>Blockera användare</strong></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/logo/addtogroup_logo.png" alt="Add to Group" style="margin-right: 5px;"> <a
+                                    href="#"><strong>Lägg till i grupp</strong></a></td>
+                            <td><img src="/logo/rankuser_logo.png" alt="Rank User" style="margin-right: 5px;"> <a
+                                    href="#"><strong>Betygsätt användare</strong></a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!---MySpace URL Box-->
+                <div class="section-box mt-5" style="background-color: #fdf7e2; border: 1px solid #cccccc;">
+                    <div style="background-color: #4a7aa3; color: white; padding: 0.5em; font-weight: bold;">
+                        Bästa hemsidan
+                    </div>
+                    <a href="https://leekspin.co/">https://leekspin.co/</a>
+                </div>
+
+                <!--Mina intressen-->
+                <div class="section-box mt-5" style="background-color: #fdf7e2; border: 1px solid #cccccc;">
+                    <div style="background-color: #4a7aa3; color: white; padding: 0.5em; font-weight: bold;">
+                        Didrikas intressen
+                    </div>
+                    <table class="interest-table">
+                        <tr>
+                            <td class="title"><strong>Böcker:</strong></td>
+                            <td class="subject">Thorn Birds | Da Vinci Koden</td>
+                        </tr>
+                        <tr>
+                            <td class="title"><strong>Filmer:</strong></td>
+                            <td class="subject">Interstellar</td>
+                        </tr>
+                        <tr>
+                            <td class="title"><strong>Musik:</strong></td>
+                            <td class="subject">Allätare! Men t.ex Yungblud, Katy Perry, eller Billie Eillish</td>
+                        </tr>
+                        <tr>
+                            <td class="title"><strong>Spel:</strong></td>
+                            <td class="subject">Stardew Valley | Minecraft | CS2</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Main Profile -->
+            <div class="col-md-9 profile-box">
+
+
+
+                <!-- My Projects -->
+                <div class="suggestions-section container mt-4">
+
+                    <div class="section-box text-center mb-3" style="background-color: #4a7aa3; color: white; font-weight: bold; padding: 0.7em; border-radius: 6px;">
+                    Till potentiella arbetsgivare
+                    </div>
+                
+                    <div class="row text-center">
+                    <div class="col-md-3 p-2">
+                        <div class="project-btn bg-yellow" onclick="openPopup('experiencePopup')">
+                        <img src="/logo/experience_logo.png" alt="experience logo" class="project-icon">
+                        <span>Erfarenhet</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-2">
+                        <div class="project-btn bg-blue" onclick="openPopup('profilePopup')">
+                        <img src="/logo/knowledge_logo.png" alt="knowledge logo" class="project-icon">
+                        <span>Profil</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-2">
+                        <div class="project-btn bg-pink" onclick="openPopup('educationPopup')">
+                        <img src="/logo/education_logo.png" alt="education logo" class="project-icon">
+                        <span>Utbildning</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-2">
+                        <div class="project-btn bg-green" onclick="openPopup('projectsPopup')">
+                        <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                        <span>Projekt</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="section-box text-center mb-3" style="background-color: #4a7aa3; color: white; font-weight: bold; padding: 0.7em; border-radius: 6px;">
+                        Mina projekt
+                        </div>
+                    
+                        <div class="row text-center">
+                        <div class="col-md-3 p-2">
+                            <div class="project-btn bg-yellow" onclick="openPopup('breakoutPopup')">
+                            <img src="/project_breakout_pic.png" alt="project logo" class="project-icon">
+                            <span>Breakout Spel i Java</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div class="project-btn bg-blue" onclick="openPopup('tictactoePopup')">
+                            <img src="/project_tictactoe_pic.png" alt="project logo" class="project-icon">
+                            <span>TicTacToe i HTML, CSS, och Javascript</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div class="project-btn bg-pink" onclick="openPopup('kattisPopup')">
+                            <img src="/kattis_project_pic.png" alt="project logo" class="project-icon">
+                            <span>Alla mina kattis projekt</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div class="project-btn bg-green">
+                            <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                            <span>TBA</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="section-box text-center mb-3" style="background-color: #4a7aa3; color: white; font-weight: bold; padding: 0.7em; border-radius: 6px;">
+                            Uppkommande projekt
+                            </div>
+                        
+                            <div class="row text-center">
+                            <div class="col-md-3 p-2">
+                                <div class="project-btn bg-yellow">
+                                <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                                <span>TBA</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2">
+                                <div class="project-btn bg-blue">
+                                <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                                <span>TBA</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2">
+                                <div class="project-btn bg-pink">
+                                <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                                <span>TBA</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2">
+                                <div class="project-btn bg-green">
+                                <img src="/logo/project_logo.png" alt="project logo" class="project-icon">
+                                <span>TBA</span>
+                                </div>
+                            </div>
+                            </div>
+                </div>
+
+                <!--Mitt Motto-->
+                <div class="section-box mt-5 w-50" style="background-color: #fdf7e2; border: 1px solid #cccccc;">
+                    <div style="background-color: #4a7aa3; color: white; padding: 0.5em; font-weight: bold;">
+                        Mitt Motto
+                    </div>
+                    <p><em>”Att misslyckas är bara ett annat sätt att lära sig hur man gör något rätt.”
+                        <br>- Marian Wright Edelman</em></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Script-->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/_movePopup.js"></script>
+    <script src="/_loadPopup.js"></script>
+</body>
+
+</html>
