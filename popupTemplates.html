@@ -112,6 +112,11 @@
         📝 Didrikas Blogg <span onclick="closePopup('blogPopup')" class="close-btn">&times;</span>
     </div>
     <div class="popup-content">
+        <h6><a href="#" onclick="openPopup('blog_2025/11/03_exam')">3 November 2025 | Avslutat kursen datakommunikation 7.5hp</a></h6>
+        <p>Idag har jag varit på en Katy Perry konsert i Köpenhamn! Sjukt...</p>
+        <hr>
+    </div>
+    <div class="popup-content">
         <h6><a href="#" onclick="openPopup('blog_2025/10/19_kpconcert')">19 Oktober 2025 | Kul på Katy Perry konsert</a></h6>
         <p>Idag har jag varit på en Katy Perry konsert i Köpenhamn! Sjukt...</p>
         <hr>
@@ -216,6 +221,19 @@
             <img src="pictures/denmarknationalcuisine.jpeg" width="100%" alt="Eating denmark national cuisine in pub picture">
             
 
+        </p>
+    </div>
+</div>
+<!--Blog popup 2025/11/03-->
+<div id="blog_2025/11/03_exam" class="popup" style="display: none;">
+    <div id="popupHeader" class="popup-header">
+        3 November 2025 | Avslutat kursen datakommunikation 7.5hp<span onclick="closePopup('blog_2025/11/03_exam')"
+            class="close-btn">&times;</span>
+    </div>
+    <div class="popup-content">
+        <p> 
+            Idag har jag examinerats från kursen "Grunderna i datakommunikation" hos Umeå Universitet på 7.5hp. 
+            Det har varit en av de mest utmanande kurserna jag har studerat, men mest lärorik. 
         </p>
     </div>
 </div>
@@ -624,6 +642,43 @@
             Det här är navigationen till min kattis profil! Där kan du se alla mina kattis projekt. Det är inte så många, men de finns haha.
             <br><br>
             <a href="https://open.kattis.com/users/didrika-bystrom" target="_blank">Klicka på mig för att komma till Kattis</a>
+        </p>
+    </div>
+</div>
+
+<!--Project VLAN & Inter-VLAN Configuration Labb-->
+<div id="vlanconfiglab" class="popup" style="display: none;">
+    <div id="popupHeader" class="popup-header">
+        VLAN & Inter-VLAN Configuration i Cisco Packet Tracer<span onclick="closePopup('vlanconfiglab')" class="close-btn">&times;</span>
+    </div>
+    <div class="popup-content">
+        <h4>Projektbeskrivning:</h4>
+        <p>
+            I den här labben designade och konfigurerade jag ett mindre nätverk med uppdelning via VLAN.
+            Syftet var att separera klient- och servertrafik samt möjliggöra säker och kontrollerad kommunikation mellan näten.
+            <br><br>
+            Jag använde en L-2 switch för att skapa två VLAN (HOME och SERVERS) och konfigurerade trunking för att transportera
+            flera VLAN över samma länk till en router. Routern konfigurerades med router-on-a-stick för att tillhandahålla inter-VLAN
+            routing och agera default gateway för respektive nät. Jag skapade även DHCP pooler på routern för att automatiskt tilldela
+            IP-adresser. Till sist implementerade jag port security på accessportarna vilket förhindrar att en obehörig klient får access. 
+            <br><br>
+            <a href="https://github.com/ropaiii/Laboration-VLAN-Inter-VLAN-Configuration" target="_blank">Klicka på mig för att komma till projektet på GitHub</a>
+        </p>
+        <h4>Tekniker:</h4>
+        <p>
+            VLAN, 802.1Q trunking, Router-on-a-stick, DHCP, Port Security.
+
+            <h4>Problem & Lösningar:</h4>  
+            1. När jag försökte skapa subinterfaces fick jag felet "Invalid interface type and number". Det berodde på att routermodellen
+            använde g0/0/0 medans jag antog att den använde g0/0. Detta löstes genom att kontrollera interfaces med kommandot "show ip interface brief"
+            och sedan konfigurera portarna därefter. 
+            <br><br>
+            2. Länken mellan router och switchen visade "STATUS: DOWN" trots att allt skulle vara färdigkonfigurerat. Genom att googla tog jag 
+            reda på att det var för att interfacet var administrativt nere och kunde öppnas genom att utföra kommandot "no shutdown" från båda sidorna.
+            <br><br>
+            3. PC blev tilldelad en 169.254.x IP-adress vilket betyder att DHCP paketen inte når routern. Orsaken var för att Packet Tracer 
+            i Simulation Mode och tiden var fryst vilket innebär att inga uppdateringar skedde. När jag startade tiden igen började DHCP fungera
+            och PC tog emot korrekt IP-adress.
         </p>
     </div>
 </div>
